@@ -354,7 +354,6 @@ body {
   right: 65%;
   bottom: 0;
   background-size: cover;
-  background-image: url("/img/hotel.jpg");
 }
 .marquee .right {
   position: absolute;
@@ -406,7 +405,6 @@ body {
   position: relative;
   height: 100vh;
   background-size: cover;
-  background-image: url("/img/hallway.jpg");
   background-position: left center;
   color: #f3f4f4;
 }
