@@ -1,0 +1,32 @@
+@import '~variables.styl'
+
+.marquee
+	height 100vh
+	background white
+	position relative
+
+	.image
+		position absolute
+		left 0
+		top 0
+		right 65%
+		bottom 0
+		background-size cover
+		background-image url('/img/hotel.jpg')
+
+	.right
+		position absolute
+		left 35%
+		top 0
+		right 0
+		bottom 0
+
+	.content
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		text-align center
+
+	.logo
+		max-width 200px
