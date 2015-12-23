@@ -45,16 +45,9 @@
 			</div>
 		</marquee>
 
-		<!-- KICKSTARTER -->
-		<kickstarter inline-template>
-			<div class="kickstarter">
-				<iframe src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</kickstarter>
-
 		<!-- ABOUT -->
 		<about inline-template>
-			<div class="about">
+			<div class="about" style="background-image:url('img/jade-hotel-sacramento-about.jpg');">
 				<div class="content">
 					<h2>About the Project</h2>
 
@@ -73,6 +66,23 @@
 			</div>
 		</about>
 
+		<div class="support">
+			<h2>Sponsorship</h2>
+
+			<div class="content">
+				<p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+		</div>
+
+		<!-- KICKSTARTER -->
+		<kickstarter inline-template>
+			<div class="kickstarter" @click="onVideoClick">
+				<iframe
+					src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html"
+					frameborder="0" scrolling="no"></iframe>
+			</div>
+		</kickstarter>
+
 		<!-- SUBMISSIONS  -->
 		<submissions inline-template>
 			<div class="submissions" style="background-image:url('img/hallway.jpg');">
@@ -81,8 +91,8 @@
 					<p>Our aim is to bring together artists from different disciplines and experiences to Sacramento, for a project shaped by an intense, site-specific working-researching experience. This collaborative process will serve as a vessel to explore visual language and the spectrum of topological schemas.</p>
 
 					<div class="buttons">
-						<a class="btn" href="#">Call to Artists</a>
-						<a class="btn" href="#">Submission Form</a>
+						<a class="btn" href="files/m5arts-call-to-artists-art-hotel-2016.pdf" target="_blank">Call to Artists</a>
+						<a class="btn" href="files/m5arts-submission-form-hotel-2016.pdf" target="_blank">Submission Form</a>
 					</div>
 				</div>
 			</div>
@@ -102,7 +112,7 @@
 					<ul>
 						<li>William Ishmael</li>
 						<li>Matt Brown</li>
-						<li>Shaun Burner</li>
+						<li><a href="https://shaunburner.wordpress.com/" target="_blank">Shaun Burner</a></li>
 					</ul>
 
 				</div>
@@ -129,17 +139,26 @@
 		<!-- FOOTER -->
 		<footer>
 			<div class="footer">
-				<div class="details">
-					email<br/>
-					phone<br/>
-					address<br/>
-					address
-				</div>
-
-				<div class="social">
-					<a href="#">facebook</a>
+				<div class="contact">
+					<h4>Contact</h4>
+					<a href="#">email</a><br/>
+					<a href="#">facebook</a><br/>
 					<a href="#">kickstarter</a>
 				</div>
+
+				<div class="details">
+					<img class="logo" src="img/m5arts-logo-dark.jpg"/>
+
+					<p>
+						M5ARTS is a new arts initiative in Downtown Sacramento committed to envisioning and creating culturally significant multi-faceted and multidimsional art experiences.
+					</p>
+					<p>
+						M5ARTS and the Art Hotel project at the historic Jade presents a temporary series of arts events, which include exhibitions, salons, lectures, film premieres, book debuts, musical performances, and artist receptions. This multi-media initiative has big hopes to extend its programs to new avenues for years to come, enriching the downtown community and helping define Sacramento’s place in the art world.
+					</p>
+
+				</div>
+
+
 			</div>
 		</footer>
 
