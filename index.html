@@ -45,16 +45,9 @@
 			</div>
 		</marquee>
 
-		<!-- KICKSTARTER -->
-		<kickstarter inline-template>
-			<div class="kickstarter">
-				<iframe src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</kickstarter>
-
 		<!-- ABOUT -->
 		<about inline-template>
-			<div class="about">
+			<div class="about" style="background-image:url('img/jade-hotel-sacramento-about.jpg');">
 				<div class="content">
 					<h2>About the Project</h2>
 
@@ -72,6 +65,23 @@
 				</div>
 			</div>
 		</about>
+
+		<div class="support">
+			<h2>Sponsorship</h2>
+
+			<div class="content">
+				<p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+			</div>
+		</div>
+
+		<!-- KICKSTARTER -->
+		<kickstarter inline-template>
+			<div class="kickstarter" @click="onVideoClick">
+				<iframe
+					src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html"
+					frameborder="0" scrolling="no"></iframe>
+			</div>
+		</kickstarter>
 
 		<!-- SUBMISSIONS  -->
 		<submissions inline-template>
@@ -102,7 +112,7 @@
 					<ul>
 						<li>William Ishmael</li>
 						<li>Matt Brown</li>
-						<li>Shaun Burner</li>
+						<li><a href="https://shaunburner.wordpress.com/" target="_blank">Shaun Burner</a></li>
 					</ul>
 
 				</div>
