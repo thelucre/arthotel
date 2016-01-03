@@ -6,12 +6,23 @@
 		<link rel="stylesheet" href="build/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body id="app">
 
 		<!-- MENU -->
-		<menu>
+		<menu inline-template>
+			<div id="menu" v-bind:class="classes">
 
+					<li><a href=".marquee" v-on:click.prevent="onClick">Home</a></li>
+					<li><a href=".about" v-on:click.prevent="onClick">About</a></li>
+					<li><a href=".press" v-on:click.prevent="onClick">Press</a></li>
+					<li><a href=".submissions" v-on:click.prevent="onClick">Submissions</a></li>
+					<li><a href=".support" v-on:click.prevent="onClick">Support</a></li>
+					<li><a href=".footer" v-on:click.prevent="onClick">Contact</a></li>
+					<li><a href="https://www.facebook.com/events/1658650591082277/" class="fi-social-facebook" target="_blank"></a></li>
+			</div>
 		</menu>
 
 		<!-- MARQUEE -->
@@ -21,23 +32,28 @@
 				<div class="right">
 
 					<div class="content">
-						<img class="logo" src="img/m5arts-logo.jpg" />
-						<p>
+						<p class="small"><em>M5Arts presents...</em></p>
+						<img class="logo" src="img/art-hotel-logo.png" />
+						<p class="uppercase">
 							painting<br/>
 							photography<br/>
 							sculpture<br/>
 							video<br/>
 							performance
 						</p>
-						<p>at</p>
+						<p class="uppercase small bold">at</p>
 						<p>
-							the jade hotel<br/>
-							an all but abandoned<br/>
+							<span class="bold uppercase large">The Jade Hotel</span><br/>
+							An all but abandoned<br/>
 							temporary art space
 						</p>
 						<p>
-							7th and L streets<br/>
-							sacramento, ca
+							7th and L Streets<br/>
+							Sacramento, CA
+						</p>
+
+						<p>
+							February 5<sup>th</sup> through 13<sup>th</sup>, 2016
 						</p>
 					</div>
 				</div>
@@ -66,33 +82,34 @@
 			</div>
 		</about>
 
-		<div class="support">
-			<h2>Sponsorship</h2>
+		<press>
+			<div class="press">
+				<div class="content">
+					<h2>Press</h2>
 
-			<div class="content">
-				<p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<ul>
+						<li>
+							<a href="http://www.sacbee.com/entertainment/arts-culture/article50596940.html " target="_blank">"Doomed Sacramento hotel could gain art glory"</a><br/>
+							<span class="source">The Sacramento Bee, December 18, 2015</span>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-
-		<!-- KICKSTARTER -->
-		<kickstarter inline-template>
-			<div class="kickstarter" @click="onVideoClick">
-				<iframe
-					src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html"
-					frameborder="0" scrolling="no"></iframe>
-			</div>
-		</kickstarter>
+		</press>
 
 		<!-- SUBMISSIONS  -->
 		<submissions inline-template>
 			<div class="submissions" style="background-image:url('img/hallway.jpg');">
 				<div class="header">
 					<h2>Submissions</h2>
-					<p>Our aim is to bring together artists from different disciplines and experiences to Sacramento, for a project shaped by an intense, site-specific working-researching experience. This collaborative process will serve as a vessel to explore visual language and the spectrum of topological schemas.</p>
+					<p>Our aim is to bring together artists from different disciplines and experiences to Sacramento, for a project shaped by an intense, site­-specific working­ experience. This collaborative process will serve as a vessel to explore visual language and the spectrum of topological schemas.</p>
+
+					<p>The query: What topology collectively brings art together, and how do different mediums operate in collaboration with each other?</p>
+
+					<p><strong>UPDATE:</strong> The submission deadline has passed for this event.</p>
 
 					<div class="buttons">
 						<a class="btn" href="files/m5arts-call-to-artists-art-hotel-2016.pdf" target="_blank">Call to Artists</a>
-						<a class="btn" href="files/m5arts-submission-form-hotel-2016.pdf" target="_blank">Submission Form</a>
 					</div>
 				</div>
 			</div>
@@ -106,14 +123,20 @@
 					<h2>The Artists</h2>
 
 					<p>
-						Artists will be announced periodically. The first artists to be announced include
+						Follow our Facebook page for the most up to date news where we will be announcing participants periodically. A few of our artists include:
 					</p>
 
 					<ul>
-						<li>William Ishmael</li>
-						<li>Matt Brown</li>
+						<li><a href="http://www.iamishmael.com/" target="_blank">William Ishmael</a></li>
+						<li><a href="https://www.newsreview.com/sacramento/artist-at-rest-and/content?oid=18291813 " target="_blank">Matt Brown</a></li> <li>
 						<li><a href="https://shaunburner.wordpress.com/" target="_blank">Shaun Burner</a></li>
+						<li><a href="http://vergeart.com/artist/gioia-fonda/profile" target="_blank">Gioia Fonda</a></li>
+						<li><a href="http://aprincelubawy.blogspot.com/" target="_blank">Amanda Prince-Lubawy</a></li>
+						<li><a href="http://www.paulbenavidez.com" target="_blank">Paul Benavidez</a></li>
+						<li><a href="http://www.dianeruhkalabell.com/" target="_blank">Diane Ruhkala Bell </a></li>
 					</ul>
+
+					<p><br/><em>And many more…</em></p>
 
 				</div>
 			</div>
@@ -136,8 +159,25 @@
 			</div>
 		</photos>
 
+		<div class="support">
+			<h2>Sponsorship</h2>
+
+			<div class="content">
+				<p>We are actively connecting with businesses and individuals throughout the region who care about art to help sponsor this non-profit event. Interested in getting involved? Email us at <a href="m5arts@gmail.com">m5arts@gmail.com</a> for more information.</p>
+			</div>
+		</div>
+
+		<!-- KICKSTARTER -->
+		<kickstarter inline-template>
+			<div class="kickstarter">
+				<iframe
+					src="https://www.kickstarter.com/projects/2061415620/art-hotel/widget/video.html"
+					frameborder="0" scrolling="no"></iframe>
+			</div>
+		</kickstarter>
+
 		<!-- FOOTER -->
-		<footer>
+		<footer-custom>
 			<div class="footer">
 				<div class="contact">
 					<h4>Contact</h4>
@@ -160,7 +200,7 @@
 
 
 			</div>
-		</footer>
+		</footer-custom>
 
 		<script src="build/build.js"></script>
 	</body>

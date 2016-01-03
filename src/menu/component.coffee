@@ -7,17 +7,19 @@ require './style.styl'
 
 # Component definition
 module.exports =
-	template: require './template.haml'
+	# template: require './template.haml'
 	inherit: true
 
 	data: () ->
-		return {
-			routes: null
-			classes:
-				open: false
-		}
+		routes:
+			home: 'Home'
+			about: 'About'
+			sponsorship: 'Sponsors'
+		classes:
+			open: false
 
 	ready: () ->
+		console.log @
 		return
 
 	methods:
@@ -30,3 +32,9 @@ module.exports =
 
 		open: () ->
 			@classes.open = true
+
+		onClick: (e) ->
+			$cur = $ e.currentTarget
+			target = $cur.attr 'href'
+			$(target).velocity 'scroll', duration: 1000
+			return
