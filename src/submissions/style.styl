@@ -6,6 +6,7 @@
 	background-size cover
 	background-position left center
 	color white
+	background-color black
 
 	.header
 		position absolute
@@ -16,3 +17,24 @@
 
 	.buttons
 		margin-top 35px
+
+
+	@media(max-width:tl)
+		height auto
+		padding 80px
+
+		.header
+			position relative
+			transform none
+			left 0
+			top 0
+
+	@media(max-width:t)
+		padding 40px
+
+		.header
+			max-width 80%
+
+	@media(max-width:m)
+		padding 40px 20px
+		background-position 34% center

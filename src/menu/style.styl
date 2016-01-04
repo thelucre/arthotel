@@ -1,7 +1,6 @@
 @import '~variables.styl'
 
 #menu
-	background rgba(white, 0.5)
 	position fixed
 	top 0
 	left 0
@@ -12,17 +11,50 @@
 	text-transform uppercase
 	font-weight 700
 	padding 0 80px
+	transition background-color 350ms ease-in-out
+
+	@media(max-width:d)
+		padding 0 40px
+		background rgba(white, 0.75)
+
+	@media(min-width:tl)
+		&.bg
+			background rgba(white, 0.75)
+
+	@media(max-width:t)
+		display none
 
 	li
 		display inline-block
 		list-style none
 		line-height 50px
 		margin 0 20px
+		vertical-align middle
 
 		&:last-of-type
 			margin-right 0
+
+		@media(max-width:d)
+			margin 0 13px
 
 		a
 			font-size: 12px;
 			text-decoration: none;
 			letter-spacing: 2px;
+
+			border-bottom 2px solid transparent
+			transition border-color 150ms ease-in-out
+			font-weight 700
+			line-height 50px
+			vertical-align middle
+
+			&:hover
+				border-bottom-color black
+
+		.fi-social-facebook
+			font-size 24px
+			border none
+			transition color 150ms ease-in-out
+
+			&:hover
+				color #2d54a1
