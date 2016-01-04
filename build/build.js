@@ -24645,18 +24645,13 @@
 	  inherit: true,
 	  data: function() {
 	    return {
-	      routes: {
-	        home: 'Home',
-	        about: 'About',
-	        sponsorship: 'Sponsors'
-	      },
 	      classes: {
 	        open: false
 	      }
 	    };
 	  },
 	  ready: function() {
-	    console.log(this);
+	    $(window).on('scroll', this.onScroll);
 	  },
 	  methods: {
 	    toggle: function() {
@@ -24672,9 +24667,12 @@
 	      var $cur, target;
 	      $cur = $(e.currentTarget);
 	      target = $cur.attr('href');
-	      $(target).velocity('scroll', {
+	      return $(target).velocity('scroll', {
 	        duration: 1000
 	      });
+	    },
+	    onScroll: function() {
+	      return $(this.$el).toggleClass('bg', $(window).scrollTop() > 500);
 	    }
 	  }
 	};

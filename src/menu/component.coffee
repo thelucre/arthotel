@@ -11,15 +11,11 @@ module.exports =
 	inherit: true
 
 	data: () ->
-		routes:
-			home: 'Home'
-			about: 'About'
-			sponsorship: 'Sponsors'
 		classes:
 			open: false
 
 	ready: () ->
-		console.log @
+		$(window).on 'scroll', @onScroll
 		return
 
 	methods:
@@ -37,4 +33,6 @@ module.exports =
 			$cur = $ e.currentTarget
 			target = $cur.attr 'href'
 			$(target).velocity 'scroll', duration: 1000
-			return
+
+		onScroll: ->
+			$(@$el).toggleClass 'bg', $(window).scrollTop() > 500
