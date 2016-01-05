@@ -180,7 +180,7 @@ body {
   position: relative;
 }
 body * {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Condensed';
 }
 #container {
   height: 100%;
@@ -266,7 +266,7 @@ h4 {
   font-size: 26px;
 }
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 170%;
   margin-bottom: 20px;
 }
@@ -275,7 +275,7 @@ p:last-of-type {
 }
 @media (max-width: 500px) {
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .uppercase {
@@ -442,6 +442,11 @@ body {
 .marquee .logo {
   max-width: 150px;
 }
+.marquee .m5logo {
+  max-width: 60px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
 .marquee p {
   line-height: 150%;
   font-size: 14px;
@@ -457,6 +462,9 @@ body {
 @media (max-height: 650px) {
   .marquee .logo {
     max-width: 90px;
+  }
+  .marquee .m5logo {
+    max-width: 50px;
   }
   .marquee p {
     font-size: 13px;
