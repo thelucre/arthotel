@@ -14,6 +14,7 @@
 		// column-count 2
 		margin 35px 0 0
 		padding 0
+		column-count 3
 
 	li
 		list-style none
@@ -28,6 +29,11 @@
 		&:hover
 			border-bottom-color black
 
+	h4
+		font-size 20px
+		margin 23px 0 25px
+		line-height 100%
+
 	@media(max-width:tl)
 		height auto
 		padding 80px
@@ -35,5 +41,11 @@
 	@media(max-width:t)
 		padding 40px
 
+		li
+			font-size 13px
+
 	@media(max-width:m)
 		padding 40px 20px
+
+		ul
+			column-count 2
