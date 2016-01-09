@@ -450,6 +450,18 @@ body {
   line-height: 150%;
   font-size: 14px;
 }
+.marquee a.event-link {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  font-weight: 700;
+  line-height: 200%;
+}
+.marquee a.event-link:hover {
+  border-bottom-color: #000;
+}
 @media (max-width: 1200px) {
   .marquee .image {
     right: 55%;
