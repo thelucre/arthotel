@@ -415,6 +415,16 @@ body {
   background: #f3f4f4;
   position: relative;
 }
+.marquee a.tickets {
+  color: #8c2b2d;
+  font-weight: 700;
+  -webkit-transition: color 300ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: color 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  font-size: 16px;
+}
+.marquee a.tickets:hover {
+  color: #be3a3d;
+}
 .marquee .image {
   position: absolute;
   left: 0;
@@ -447,7 +457,7 @@ body {
   vertical-align: middle;
 }
 .marquee p {
-  line-height: 150%;
+  line-height: 130%;
   font-size: 14px;
 }
 .marquee a.event-link {
@@ -580,19 +590,33 @@ body {
 }
 /*# sourceMappingURL=src/kickstarter/style.css.map */.about {
   position: relative;
-  height: 100vh;
+  height: auto;
   background-size: cover;
   background-position: center center;
   color: #f3f4f4;
 }
 .about .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  max-width: 800px;
+  padding: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about a {
+  color: #f3f4f4;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  font-weight: 700;
+  line-height: 200%;
+}
+.about a:hover {
+  border-bottom-color: #f3f4f4;
+}
+.about h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 100%;
+  margin-top: 40px;
 }
 @media (max-width: 1024px) {
   .about {
@@ -606,6 +630,7 @@ body {
             transform: none;
     left: 0;
     top: 0;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {

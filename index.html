@@ -27,6 +27,7 @@
 
 					<li><a href=".marquee" v-on:click.prevent="onClick">Home</a></li>
 					<li><a href=".about" v-on:click.prevent="onClick">About</a></li>
+					<li><a href=".schedule" v-on:click.prevent="onClick">Schedule</a></li>
 					<li><a href=".artists" v-on:click.prevent="onClick">Artists</a></li>
 					<li><a href=".press" v-on:click.prevent="onClick">Press</a></li>
 					<li><a href=".support" v-on:click.prevent="onClick">Sponsors</a></li>
@@ -67,7 +68,10 @@
 							<a href="https://www.facebook.com/events/1658650591082277/" target="_blank" class="event-link">
 								Exhibit opens February 5<sup>th</sup> through 13<sup>th</sup>, 2016
 							</a>
-							<!-- <br/><span class="bold"><a href="#">See our event calendar</a></span> -->
+							<br/>
+							<a class="tickets" href="https://m5arts.ticketspice.com/vip-preview" target="_blank">
+								Tickets are now available for the <br/>Art Hotel “First Look” VIP Reception &amp; Tour on <br/>February 4th, 6-9 pm, at 700 J Street.
+							</a>
 						</p>
 					</div>
 				</div>
@@ -91,7 +95,49 @@
 
 					<p>Why are we doing this you ask? To work. To create. To make something happen.</p>
 
-					<p>To bring artists together. To inspire others to do the same.</p>
+					<p class="schedule">To bring artists together. To inspire others to do the same.</p>
+
+					<h3>Event Schedule</h3>
+
+					<h6>Thursday, Feb. 4th</h6>
+
+					<p>
+						Ticketed "First Look" VIP Reception -
+						<a href="https://www.facebook.com/events/443805702488371" target="_blank">
+							Event Details
+						</a><br/>
+						First Northern Bank<br/>
+						Tours available from 6pm-9pm
+					</p>
+
+					<h6>Friday, Feb. 5th - Saturday, Feb. 6th</h6>
+					<p>Tours available from 12pm-11pm</p>
+					<ul>
+						<li>Performance by Amanda Prince-Lubawy at Ruhstaller Friday at 8pm</li>
+						<li>Performance by Don Julio and Kevin Z at Ruhstaller Friday at 9pm</li>
+						<li>Short Films at Marshall on Friday from 6pm-11pm</li>
+						<li>History Tour at Marshall Saturday at 12pm & 2pm</li>
+						<li>Poetry at Marshall on Saturday at 6pm</li>
+					</ul>
+
+					<h6>Sunday, Feb. 7th - Thursday, Feb. 11th</h6>
+					<p>Tours available from 3pm - 9pm</p>
+					<ul>
+						<li>Short Films at Ruhstaller from 6pm-close</li>
+						<li>Other programming TBA</li>
+					</ul>
+
+					<h6>Friday, Feb. 12th - Saturday, Feb. 13th</h6>
+					<p>Tours available from 12pm-11pm</p>
+					<ul>
+						<li>Performance by Amanda Prince-Lubawy at Ruhstaller Friday at 8pm</li>
+						<li>Performance by Don Julio and Kevin Z at Ruhstaller Friday at 9pm</li>
+						<li>Short Films at Ruhstaller from 6pm-close</li>
+						<li>History Tour at Marshall Saturday at 12pm & 2pm (new!)</li>
+						<li>Other programming TBA</li>
+					</ul>
+
+					<em>All is subject to change.</em>
 				</div>
 			</div>
 		</about>
@@ -111,7 +157,7 @@
 						<li>Alina Celik</li>
 						<li>Amanda Prince-Lubawy</li>
 						<li><a href="http://syndeticart.tumblr.com" target="_blank">Andy Cunningham</a></li>
-						<li><a href="http://Annaktrinkraus.com" target="_blank">Annakatrin Kraus</a></li>
+						<li><a href="http://Annakatrinkraus.com" target="_blank">Annakatrin Kraus</a></li>
 						<li><a href="http://www.aescht-berthold.de" target="_blank">Hans Aescht</a></li>
 						<li>Arielle Robbins</li>
 						<li>Bobby Edwards</li>
@@ -134,7 +180,7 @@
 						<li><a href="http://thelucre.com/" target="_blank">Eric Howard</a></li>
 						<li><a href="http://qedarts.com/" target="_blank">Frank Brooks<a/></li>
 						<li>Gerald H. Thomas </li>
-						<li>Gioia Fonda​</li>
+						<li><a href="http://www.giveafork.net" target="_blank">Gioia Fonda</a>​</li>
 						<li>Jack Fulton</li>
 						<li><a href="http://www.jakecastro1.com" target="_blank">Jake Castro</a></li>
 						<li>Jefferson Howery</li>
@@ -232,15 +278,49 @@
 					<h2>Press</h2>
 
 					<ul>
+						<!--
+						<li>
+							<a href="" target="_blank">""</a><br/>
+							<span class="source"></span>
+						</li>
+						 -->
+						<li>
+							<a href="http://www.comstocksmag.com/web-only/artistic-farewell-jade-apartments?utm_campaign=Boutique+developments+are+essential+to+a+city%27s+character&utm_medium=email&utm_source=bundle_and_blast" target="_blank">"An artistic farewell to the Jade Apartments"</a><br/>
+							<span class="source">Comstock’s Magazine</span>
+						</li>
+						<li>
+							<a href="https://www.cityscoutmag.com/art-music/the-artists-of-art-hotel-part-2" target="_blank">"The Artists of Art Hotel, Part 2"</a><br/>
+							<span class="source">City Scout Magazine</span>
+						</li>
+						<li>
+							<a href="http://www.sacbee.com/news/local/news-columns-blogs/city-beat/article57405383.html " target="_blank">"Art Hotel captures city's creative drive"</a><br/>
+							<span class="source">The Sacramento Bee</span>
+						</li>
+						<li>
+							<a href="https://www.cityscoutmag.com/art-music/sac-art-hotel" target="_blank">"Sacramento Art Hotel"</a><br/>
+							<span class="source">City Scout</span>
+						</li>
+						<li>
+							<a href="https://www.cityscoutmag.com/art-music/artists-art-hotel-part-1" target="_blank">"The Artists of Art Hotel: Part I"</a><br/>
+							<span class="source">City Scout</span>
+						</li>
+						<li>
+							<a href="https://www.cityscoutmag.com/art-music/cs-podcast/m5-arts-collective" target="_blank">"Shaun Burner and Seumas Coutts of M5 Arts Collective"</a><br/>
+							<span class="source">City Scout</span>
+						</li>
 						<li>
 							<a href="http://www.bizjournals.com/sacramento/blog/ed-goldman/2016/01/ed-goldman-mission-disposable-at-the-downtown-art.html" target="_blank">"Mission: Disposable at the downtown 'Art Hotel'"</a><br/>
-							<span class="source">Sacramento Business Journal, January 12, 2016</span>
+							<span class="source">Sacramento Business Journal</span>
 						</li>
 						<li>
 							<a href="http://www.sacbee.com/entertainment/arts-culture/article50596940.html " target="_blank">"Doomed Sacramento hotel could gain art glory"</a><br/>
-							<span class="source">The Sacramento Bee, December 18, 2015</span>
+							<span class="source">The Sacramento Bee</span>
 						</li>
 					</ul>
+
+					<p><br/>Companion audio to the Art Hotel project in Sacramento, CA. Featuring former residents of the Marshall and Jade buildings, and the artists working to transform the block during it's final weeks.<br/>&nbsp;</p>
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" style="max-width:500px;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244984073&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
 				</div>
 			</div>
 		</press>
@@ -276,14 +356,31 @@
 				<ul>
 					<li><a href="http://www.blackbird-kitchen.com" target="_blank">Blackbird Kitchen + Beer Gallery</a></li>
 					<li><a href="http://www.dickblick.com/stores/california/sacramentonowopen/" target="_blank">BLICK Art Materials</a></li>
+					<li><a href="http://blockbutcherbar.com/" target="_blank">Block Butcher Bar </a></li>
 					<li><strong>Concerts 4 Charity</strong></li>
 					<li><a href="http://www.grigioart.com" target="_blank">Grigio Art Consulting</a></li>
-					<li><a href="http://www.porterllc.com/" target="_blank">Porter Consulting</a></li>
+					<li><a href="https://www.facebook.com/La-Bonne-Soupe-Cafe-264430820233793/" target="_blank">La Bonne Soupe Café </a></li>
+					<li><a href="http://www.magpiecafe.com/" target="_blank">Magpie</a></li>
+					<li><a href="http://www.matriscope.com/" target="_blank">Matriscope </a></li>
 					<li><a href="http://mktng.co/" target="_blank">MKTNG</a></li>
+					<li><a href="http://www.opbrewco.com" target="_blank">Oak Park Brewery</a></li>
+					<li><a href="http://www.porterllc.com/" target="_blank">Porter Consulting</a></li>
+					<li><a href="http://progressive-paint.com/" target="_blank">Progressive Painting</a></li>
 					<li><a href="http://ruhstallerbeer.com/" target="_blank">Ruhstaller</a></li>
+					<li><a href="http://www.sacregcf.org" target="_blank">Sacramento Regional Community Foundation</a></li>
+					<li><a href="https://www.facebook.com/SaddleRockBar/" target="_blank">Saddle Rock</a></li>
+					<li><a href="https://www.seanminorwines.com/" target="_blank">Sean Minor Wines</a></li>
+					<li><a href="https://www.facebook.com/Seasons-Coffee-Roasters-574972592629652/?fref=ts" target="_blank">Seasons Coffee Roasters </a></li>
 					<li><a href="http://streyvineyards.com/" target="_blank">St. Rey Winery</a></li>
 					<li><a href="http://www.universityart.com/" target="_blank">University Art</a></li>
 				</ul>
+
+				<p><br/>
+					<strong>Thank you to those that contributed to our Kickstarter campaign:</strong>
+				</p>
+				<p>
+					Laura Good, Luke Sanders, Dean Haakenson, Mark Bean, Sue McElligott, Stephanie, David Hirzel, Daniel, Maia Schneider, Gioia Fonda, Lauren and Adrian Gilmore, Darlene Engellenner, Shane Matthew Murphy, Erin Palmer, Diane Ruhkala Bell, Chris Morfas, Darling Neath, Brandon Mettler, Matthew Read, Sam Keshavarz, Paul Arjil, Melissa, Agrokrag, Justin Wood, Kaz Huette, Cmor, Matthew Kurtz, Michaela Manago, Jared Konopitski, David Graybill, Meagan Olson, Daniel de back, MaryLou Nutting, Can Foster, Thomas Dodson, Callista Wengler, Jeannie Howell, Emilie Cameron, Francie Dillon, Christina Marie, Dianne Brown, Clay Nutting, pixelsniper, Paul Endelman, David Sobon, Abraxis Spera, Dale and Jan Tudor, Kelly Peterson, Kristan Otto, Mary Carlson and John Noble, Karen Thacker, Scott Eggert, Dacia Eastin, Laura Braden, Arkadiy Yaslynsky, Randall W. Sater, Jay Sales, Janine Bera, Glenn, Eric Douglas, David Temblador, Kit, Justin Fanslau, Glenda &amp; Dustin Corcoran and William Ishmael
+				</p>
 			</div>
 		</div>
 

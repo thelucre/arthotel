@@ -2,17 +2,37 @@
 
 .about
 	position relative
-	height 100vh
+	height auto
 	background-size cover
 	background-position center center
 	color white
 
 	.content
-		position absolute
-		top 50%
-		left 50%
-		transform translate(-50%, -50%)
-		max-width 800px
+		padding 80px
+		max-width 900px
+		margin 0 auto
+		// position absolute
+		// top 50%
+		// left 50%
+		// transform translate(-50%, -50%)
+		// max-width 800px
+
+	a
+		color white
+		font-weight 700
+		border-bottom 2px solid transparent
+		transition border-color 150ms ease-in-out
+		font-weight 700
+		line-height 200%
+
+		&:hover
+			border-bottom-color white
+
+	h6
+		font-size 20px
+		margin-bottom 10px
+		line-height 100%
+		margin-top: 40px
 
 	@media(max-width:tl)
 		height auto
@@ -23,6 +43,7 @@
 			transform none
 			left 0
 			top 0
+			padding 0
 
 	@media(max-width:t)
 		padding 40px
