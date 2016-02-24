@@ -1,0 +1,55 @@
+body.media
+	.marquee
+		text-align center
+		padding 5vw 10vw
+		height auto
+
+		*
+			font-size 18px !important
+
+div.media
+	text-align center
+	color white
+	font-size 18px
+	background gold
+	padding 5vw 10vw
+	clearfix()
+
+	a
+		color white
+		font-weight 700
+
+		border-bottom 2px solid transparent
+		transition border-color 150ms ease-in-out
+		font-weight 700
+		line-height 200%
+
+		&:hover
+			border-bottom-color black
+
+
+	.images
+		margin-top 50px
+
+	@media(min-width 769px)
+		#grid[data-columns]::before
+			content '2 .column.size-1of2'
+
+		.column { float: left; }
+
+		.size-1of2
+			width 50%
+
+		img
+			margin-bottom 20px
+			margin-left 10px
+			margin-right 10px
+			width calc(100% - 20px)
+
+
+@media(max-width 768px)
+	div.media, body.media .marquee
+		padding 5vw
+
+	 .size-1of2
+		width 100%

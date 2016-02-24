@@ -291,6 +291,92 @@ p:last-of-type {
 .small {
   font-size: 11px;
 }
+body.media .marquee {
+  text-align: center;
+  padding: 5vw 10vw;
+  height: auto;
+}
+body.media .marquee * {
+  font-size: 18px !important;
+}
+div.media {
+  text-align: center;
+  color: #f3f4f4;
+  font-size: 18px;
+  background: #b1aca2;
+  padding: 5vw 10vw;
+}
+div.media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.media a {
+  color: #f3f4f4;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  font-weight: 700;
+  line-height: 200%;
+}
+div.media a:hover {
+  border-bottom-color: #000;
+}
+div.media .images {
+  margin-top: 50px;
+}
+@media (min-width: 769px) {
+  div.media #grid[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+  div.media .column {
+    float: left;
+  }
+  div.media .size-1of2 {
+    width: 50%;
+  }
+  div.media img {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  div.media,
+  body.media .marquee {
+    padding: 5vw;
+  }
+  .size-1of2 {
+    width: 100%;
+  }
+}
+.virtual-hotel {
+  background-size: cover;
+  background-position: center center;
+  padding: 10vh 10vw;
+  text-align: right;
+  color: #000;
+}
+.virtual-hotel p {
+  max-width: 500px;
+  margin: 10px 0 0;
+  display: inline-block;
+}
+.virtual-hotel a {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+          transition: border-color 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  line-height: 200%;
+  margin-top: 30px;
+  display: block;
+}
+.virtual-hotel a:hover {
+  border-bottom-color: #000;
+}
 html,
 body,
 #app {
@@ -654,7 +740,7 @@ body {
   margin: 30px auto 0;
 }
 .press ul {
-  margin: 35px 0 0;
+  margin: 35px 0;
   padding: 0;
 }
 .press li {
@@ -698,25 +784,23 @@ body {
     font-size: 13px;
   }
   .press ul {
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=src/press/style.css.map */.submissions {
   position: relative;
-  height: 100vh;
   background-size: cover;
   background-position: left center;
   color: #f3f4f4;
   background-color: #000;
+  padding: 80px;
 }
-.submissions .header {
-  position: absolute;
-  top: 50%;
-  left: 80px;
-  max-width: 40%;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+.submissions h4 {
+  line-height: 120%;
+  margin-bottom: 25px;
+}
+.submissions p {
+  font-size: rem(20px);
 }
 .submissions .buttons {
   margin-top: 35px;
@@ -726,21 +810,10 @@ body {
     height: auto;
     padding: 80px;
   }
-  .submissions .header {
-    position: relative;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-    left: 0;
-    top: 0;
-  }
 }
 @media (max-width: 768px) {
   .submissions {
     padding: 40px;
-  }
-  .submissions .header {
-    max-width: 80%;
   }
 }
 @media (max-width: 500px) {
