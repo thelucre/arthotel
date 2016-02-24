@@ -12,13 +12,15 @@
 		display inline-block
 
 	a
-		font-size 18px
 		font-weight 700
 		border-bottom 2px solid transparent
-		transition border-color 150ms ease-in-out
-		line-height 200%
-		margin-top 30px
-		display block
+		transition color 150ms ease-in-out
+
+		&.tour
+			line-height 200%
+			margin-top 30px
+			display block
+			font-size 18px
 
 		&:hover
-			border-bottom-color black
+			color lighten(#8c2b2d, 20%)
